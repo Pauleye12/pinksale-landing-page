@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import SideBarComponent from "./SideBarComponents";
 import SideBarDropdown from "./SideBarDropdown";
-import { ReactComponent as Home } from "../src/assets/Home.svg";
-import { ReactComponent as Launchpad } from "../src/assets/Launchpad.svg";
-import { ReactComponent as PrivateSale } from "../src/assets/privateSale.svg";
-import { ReactComponent as PinkLock } from "../src/assets/pinkLock.svg";
-import { ReactComponent as AirDrop } from "../src/assets/airDrop.svg";
-import { ReactComponent as LeaderBoard } from "../src/assets/leaderBoard.svg";
-import { ReactComponent as AntiBot } from "../src/assets/antiBot.svg";
-import { ReactComponent as MultiSender } from "../src/assets/multiSender.svg";
-import { ReactComponent as PoolsAlert } from "../src/assets/poolsAlert.svg";
-import { ReactComponent as KycAudit } from "../src/assets/kycAudit.svg";
-import { ReactComponent as Docs } from "../src/assets/docs.svg";
-import { ReactComponent as Telegram } from "../src/assets/telegram.svg";
-import { ReactComponent as Twitter } from "../src/assets/twitter.svg";
-import { ReactComponent as Daylight } from "../src/assets/daylight.svg";
-import { ReactComponent as Stroke } from "../src/assets/stroke.svg";
-import { ReactComponent as Moonlight } from "../src/assets/moonlight.svg";
+import { ReactComponent as Home } from "../assets/Home.svg";
+import { ReactComponent as Launchpad } from "../assets/Launchpad.svg";
+import { ReactComponent as PrivateSale } from "../assets/privateSale.svg";
+import { ReactComponent as PinkLock } from "../assets/pinkLock.svg";
+import { ReactComponent as AirDrop } from "../assets/airDrop.svg";
+import { ReactComponent as LeaderBoard } from "../assets/leaderBoard.svg";
+import { ReactComponent as AntiBot } from "../assets/antiBot.svg";
+import { ReactComponent as MultiSender } from "../assets/multiSender.svg";
+import { ReactComponent as PoolsAlert } from "../assets/poolsAlert.svg";
+import { ReactComponent as KycAudit } from "../assets/kycAudit.svg";
+import { ReactComponent as Docs } from "../assets/docs.svg";
+import { ReactComponent as Telegram } from "../assets/telegram.svg";
+import { ReactComponent as Twitter } from "../assets/twitter.svg";
+import { ReactComponent as Daylight } from "../assets/daylight.svg";
+import { ReactComponent as Stroke } from "../assets/stroke.svg";
+import { ReactComponent as Moonlight } from "../assets/moonlight.svg";
 import PermanentSideBar from "./permanentSideBar";
 
 class SideBar extends Component {
