@@ -25,10 +25,10 @@ class SideBar extends Component {
     //Alright then
     content: [
       { id: 1, logo: <Home />, label: "Home" },
-      { id: 2, logo: <Launchpad />, label: "Launchpads", dropdown: "" },
-      { id: 3, logo: <PrivateSale />, label: "Private Sale", dropdown: "" },
-      { id: 4, logo: <PinkLock />, label: "PinkLock", dropdown: "" },
-      { id: 5, logo: <AirDrop />, label: "Airdrop", dropdown: "" },
+      { id: 2, logo: <Launchpad />, label: "Launchpads", dropdown: [ "Create launchpad", "Create fair launch", "Create dutch"] },
+      { id: 3, logo: <PrivateSale />, label: "Private Sale", dropdown: [] },
+      { id: 4, logo: <PinkLock />, label: "PinkLock", dropdown: [] },
+      { id: 5, logo: <AirDrop />, label: "Airdrop", dropdown: [] },
       { id: 6, logo: <LeaderBoard />, label: "Leaderboard" },
       { id: 7, logo: <AntiBot />, label: "Anti-Bot" },
       { id: 8, logo: <MultiSender />, label: "Multi-Sender" },

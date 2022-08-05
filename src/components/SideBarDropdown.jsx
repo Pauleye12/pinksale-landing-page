@@ -3,11 +3,14 @@ import React, { Component } from "react";
 class SideBarDropdown extends Component {
   constructor(props) {
     super(props);
+    this.state={
+      dropdownOpen:false
+    }
   }
   render() {
     return (
       <div className="side-bar-items ">
-        <a href="" className="side-bar-link">
+        <div  className="side-bar-link" onClick={()=>{this.setState({dropdownOpen:!this.state.dropdownOpen})}}>
           <div className=" side-bar-items-content d-flex justify-content-start align-items-center">
             {this.props.content.logo}
             <div className="side-bar-text d-flex justify-content-between align-items-center">
@@ -16,7 +19,14 @@ class SideBarDropdown extends Component {
             </div>
            
           </div>
-        </a>
+        </div>
+        <div className={`height-toggle ${this.state.dropdownOpen? 'height-toggle-open':''}`}>
+          {this.props.content.dropdown.map((e, index)=>{
+            return(
+              <a key={index} href="">{e}</a>
+            )
+          })}
+        </div>
       </div>
     );
   }

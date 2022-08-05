@@ -73,6 +73,22 @@ button:focus-visible {
   display: none;
   margin: 0 10px;
 }
+.droplist{
+
+}
+
+.height-toggle{
+  height: 0;
+  overflow: hidden;
+}
+.height-toggle a{
+  display: block;
+  padding: 8px 16px;
+  background-color: lightgray;
+}
+.height-toggle-open{
+  height: 100%;
+}
 /* HEADER CSS */
 .header{
   z-index: 1000;
@@ -181,7 +197,7 @@ button:focus-visible {
   background-color: gray;
 }
 .side-bar-items{
-  height: 40px;
+  height: max-content;
   margin-top: 4px;
   margin-bottom: 10px;
 
