@@ -1,0 +1,381 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* VARIABLE CSS */
+  --background-pink: #faf9fa;
+  --background-pink-button: #fdeaf1;
+  --text-pink: #f95997;
+  --text-highlight: #f95192;
+  --text-color: #222;
+}
+
+a {
+  color: rgb(249, 81, 146);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* manual css starts */
+.bg-color{
+  background-color: var(--background-pink);
+}
+.marginTop{
+  margin-top: 70px;
+  padding: 120px 20px 20px 20px;
+  z-index: 10;
+}
+.display-none{
+  display: none;
+  margin: 0 10px;
+}
+/* HEADER CSS */
+.header{
+  z-index: 1000;
+}
+.navbar{
+  height: 70px;
+  padding: 15px 7px;
+  background-color: white;
+}
+
+.container-fluid{
+  height: 40px;
+}
+.navbar-toggler{
+  height: 40px;
+  width: 50px;
+  border: none;
+}
+.navbar-toggler-icon{
+  width: 30px;
+  height: 36px;
+}
+.header-logo-link{
+  width:36px;
+  height: 40px;
+  
+}
+.header-logo{
+  width: 36px;
+}
+.header-left{
+  width: 110px;
+  gap: 4px;
+
+}
+.header-gap{
+  gap: 10px;
+}
+.header-right{
+  gap: 10px;
+  height: 100%;
+}
+.btn{
+  padding: 5px ;
+  height: 100%;
+  border: none !important;
+}
+.header-options-btn, .header-options-btn:hover {
+  background-color: var(--background-pink);
+  color: var(--text-pink);
+  
+}
+
+.select-network-img{
+  width: 25px;
+ 
+}
+.btn-connect,.btn-connect:hover{
+  background-color: var(--background-pink-button);
+  color: var(--text-pink);
+  padding: 0 16px;
+  border: none;
+}
+.pinksale{
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.fw-bold{
+  font-weight: 600 !important ;
+}
+
+/* SIDE BAR CSS */
+.side-bar{
+  padding-top: 70px;
+  width: 200px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  transition: transform 350ms ease-out;
+}
+/* HERE */
+/* you can use % here instaed of hard */
+/* ohh ok */
+.side-bar-close{
+  transform: translateX(-100%);
+}
+.side-bar-top{
+  position: relative;
+  overflow: auto;
+  height: 550px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width:7px ;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  
+}
+::-webkit-scrollbar-thumb{
+  background-color: gray;
+}
+.side-bar-items{
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+}
+
+.side-bar-items-content{
+  height: 100%;
+  margin: 0 20px;
+}
+.side-bar-text{
+  margin-left: 10px;
+  width: 100%;
+  text-align: start;
+}
+.dropdown{
+  font-size: 25px;
+}
+.side-bar-link{
+  color:  var(--text-color) ;
+}
+.side-bar-link:hover{
+  color: var(--text-pink);
+}
+.top-row,.bottom-row{
+  margin-bottom: 4px;
+}
+.side-bar-bottom-content{
+  padding: 16px 16px 8px;
+}
+.side-bar-bottom-img{
+  width: 18px;
+  margin-right: 5px;
+}
+.pinksale-link{
+  font-size: 13px;
+}
+.price{
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.d-flex span{
+  font-size: 13px;
+}
+
+.permanent{
+  width: 80px;
+  position: fixed;
+  left: 0;
+  z-index: 90;
+  background-color: inherit;
+}
+.top-permanent{
+  height: 570px;
+}
+.bottom-permanent{
+  height:53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.permanent-hide{
+  width: 0;
+  overflow: hidden;
+}
+
+
+/* INTRODUCTION STYLES */
+.protocol-text{
+  font-size: 20px;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+}
+
+.protocol-text p{
+  max-width: 70%;
+  margin: 0;
+}
+.center-btns{
+  height: 52px;
+}
+.btn-create-now,.btn-learn-more,.btn-create-now:hover,.btn-learn-more:hover{
+  background-color: var(--background-pink-button);
+  color: var(--text-pink);
+  padding: 0 24px;
+  border: none;
+}
+.wrapper{
+  width: 100%;
+  padding: 48px 0px;
+
+}
+.gap{
+  gap: 20px;
+}
+.padding-tabs{
+  padding: 30px 0;
+ 
+}
+.value{
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.text{
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 7px;
+  
+}
+.token-sales{
+  padding: 32px 0;
+  
+}
+.token-sales h1{
+  margin-bottom: 24px;
+}
+.token-sales-text{
+  padding: 0 70px;
+  font-size: 18px;
+  text-align: center;
+}
+.filledCards{
+  padding: 10px;
+  gap: 20px;
+}
+.card-img{
+  width: 84px;
+  margin-top: 48px;
+}
+.card-text{
+  padding: 26px;
+}
+.card-text p{
+  color:rgb(136, 136, 136);
+}
+.growing-protocol{
+  margin: 60px 0;
+}
+.disclaimer{
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 50px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media screen and (min-width: 769px)  {
+  .gap{
+    gap: 40px;
+  }
+  .card-gap{
+    gap: 20px;
+  }
+  .display-none{
+    display: initial;
+  }
+  .permanent-hide{
+    width: initial;
+    overflow: visible;
+  }
+  .pink-bg, .pink-bg:hover{
+    background-color: var(--background-pink-button);
+    padding:0 10px;
+  }
+  .black-text{
+    color: black;
+  }
+}
+
+@media screen and (min-width: 971px) {
+  .width{
+   width: 200px;
+  }
+}
+
+@media screen and (min-width: 1179px) {
+  .width{
+    width: 250px;
+  }
+}
