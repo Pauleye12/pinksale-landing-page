@@ -5,7 +5,7 @@ import SideBar from './side-bar'
 class ToggleState extends Component {
 
         state = { 
-            isSideBarOpen: true
+            isSideBarOpen: false
          } 
     
     render() { 

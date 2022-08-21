@@ -28,7 +28,6 @@ a {
   text-decoration: none;
 }
 
-
 body {
   margin: 0;
   display: flex;
@@ -61,109 +60,115 @@ button:focus-visible {
 }
 
 /* manual css starts */
-.bg-color{
+.bg-color {
   background-color: var(--background-pink);
 }
-.marginTop{
+.marginTop {
   margin-top: 70px;
   padding: 120px 20px 20px 20px;
   z-index: 10;
 }
-.display-none{
+.display-none {
   display: none;
   margin: 0 10px;
 }
-.droplist{
-
+.droplist {
 }
 
-.height-toggle{
+.height-toggle {
   height: 0;
   overflow: hidden;
+  background-color: var(--background-pink);
 }
-.height-toggle a{
+.height-toggle a {
   display: block;
   padding: 8px 16px;
-  background-color: lightgray;
+ background-color: var(--background-pink);
+ color: var(--text-color);
 }
-.height-toggle-open{
+.height-toggle-open {
   height: 100%;
 }
 /* HEADER CSS */
-.header{
+.header {
   z-index: 1000;
 }
-.navbar{
+.navbar {
   height: 70px;
   padding: 15px 7px;
   background-color: white;
 }
 
-.container-fluid{
+.container-fluid {
   height: 40px;
 }
-.navbar-toggler{
+.nav-toggler {
   height: 40px;
   width: 50px;
-  border: none;
+  /* background-color: white; */
+  /* border: none !important;
+  outline: none !important; */
+  
 }
-.navbar-toggler-icon{
+/* .navbar-toggler:active{
+  border: none !important;
+  outline: none !important;
+} */
+.navbar-toggler-icon {
   width: 30px;
   height: 36px;
 }
-.header-logo-link{
-  width:36px;
+.header-logo-link {
+  width: 36px;
   height: 40px;
-  
 }
-.header-logo{
+.header-logo {
   width: 36px;
 }
-.header-left{
+.header-left {
   width: 110px;
   gap: 4px;
-
 }
-.header-gap{
+.header-gap {
   gap: 10px;
 }
-.header-right{
+.header-right {
   gap: 10px;
   height: 100%;
 }
-.btn{
-  padding: 5px ;
+.btn {
+  padding: 5px;
   height: 100%;
   border: none !important;
 }
-.header-options-btn, .header-options-btn:hover {
+.header-options-btn,
+.header-options-btn:hover {
   background-color: var(--background-pink);
   color: var(--text-pink);
-  
 }
 
-.select-network-img{
+.select-network-img {
   width: 25px;
- 
 }
-.btn-connect,.btn-connect:hover{
+.btn-connect,
+.btn-connect:hover {
   background-color: var(--background-pink-button);
   color: var(--text-pink);
   padding: 0 16px;
   border: none;
 }
-.pinksale{
-  font-size: 16px;
+.pinksale {
+  font-size: 16px !important;
   font-weight: 600;
   color: #1a1a1a;
 }
 
-.fw-bold{
+.fw-bold {
   font-weight: 600 !important ;
 }
 
 /* SIDE BAR CSS */
-.side-bar{
+.side-bar {
   padding-top: 70px;
   width: 200px;
   height: 100vh;
@@ -174,179 +179,175 @@ button:focus-visible {
   z-index: 100;
   transition: transform 350ms ease-out;
 }
-/* HERE */
-/* you can use % here instaed of hard */
-/* ohh ok */
-.side-bar-close{
+.side-bar-close {
   transform: translateX(-100%);
 }
-.side-bar-top{
+.side-bar-top {
   position: relative;
   overflow: auto;
   height: 550px;
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
-  width:7px ;
+::-webkit-scrollbar {
+  width: 7px;
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
-  
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: gray;
 }
-.side-bar-items{
-  height: max-content;
+.side-bar-items {
+  min-height: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
-
+}
+.full-height{
+  height: 40px;
 }
 
-.side-bar-items-content{
+.side-bar-items-content {
   height: 100%;
   margin: 0 20px;
 }
-.side-bar-text{
+.side-bar-text {
   margin-left: 10px;
   width: 100%;
   text-align: start;
 }
-.dropdown{
+.dropdown {
   font-size: 25px;
 }
-.side-bar-link{
-  color:  var(--text-color) ;
+.side-bar-link {
+  color: var(--text-color);
 }
-.side-bar-link:hover{
+.side-bar-link:hover, .height-toggle a:hover {
   color: var(--text-pink);
+  cursor: pointer;
 }
-.top-row,.bottom-row{
+.top-row,
+.bottom-row {
   margin-bottom: 4px;
 }
-.side-bar-bottom-content{
+.side-bar-bottom-content {
   padding: 16px 16px 8px;
 }
-.side-bar-bottom-img{
+.side-bar-bottom-img {
   width: 18px;
   margin-right: 5px;
 }
-.pinksale-link{
+.pinksale-link {
   font-size: 13px;
 }
-.price{
+.price {
   font-size: 13px;
   font-weight: 700;
 }
 
-.d-flex span{
+.d-flex span {
   font-size: 13px;
 }
 
-.permanent{
+.permanent {
   width: 80px;
   position: fixed;
   left: 0;
   z-index: 90;
   background-color: inherit;
 }
-.top-permanent{
+.top-permanent {
   height: 570px;
 }
-.bottom-permanent{
-  height:53px;
+.bottom-permanent {
+  height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.permanent-hide{
+.permanent-hide {
   width: 0;
   overflow: hidden;
 }
 
-
 /* INTRODUCTION STYLES */
-.protocol-text{
+.protocol-text {
   font-size: 20px;
   max-width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-
 }
 
-.protocol-text p{
+.protocol-text p {
   max-width: 70%;
   margin: 0;
 }
-.center-btns{
+.center-btns {
   height: 52px;
 }
-.btn-create-now,.btn-learn-more,.btn-create-now:hover,.btn-learn-more:hover{
+.btn-create-now,
+.btn-learn-more,
+.btn-create-now:hover,
+.btn-learn-more:hover {
   background-color: var(--background-pink-button);
   color: var(--text-pink);
   padding: 0 24px;
   border: none;
 }
-.wrapper{
+.wrapper {
   width: 100%;
   padding: 48px 0px;
-
 }
-.gap{
+.gap {
   gap: 20px;
 }
-.padding-tabs{
+.padding-tabs {
   padding: 30px 0;
- 
 }
-.value{
+.value {
   font-weight: 600;
   font-size: 36px;
   margin-bottom: 5px;
 }
-.text{
+.text {
   font-size: 15px;
   margin: 0;
   margin-bottom: 7px;
-  
 }
-.token-sales{
+.token-sales {
   padding: 32px 0;
-  
 }
-.token-sales h1{
+.token-sales h1 {
   margin-bottom: 24px;
 }
-.token-sales-text{
+.token-sales-text {
   padding: 0 70px;
   font-size: 18px;
   text-align: center;
 }
-.filledCards{
+.filledCards {
   padding: 10px;
   gap: 20px;
 }
-.card-img{
+.card-img {
   width: 84px;
   margin-top: 48px;
 }
-.card-text{
+.card-text {
   padding: 26px;
 }
-.card-text p{
-  color:rgb(136, 136, 136);
+.card-text p {
+  color: rgb(136, 136, 136);
 }
-.growing-protocol{
+.growing-protocol {
   margin: 60px 0;
 }
-.disclaimer{
+.disclaimer {
   font-size: 15px;
   text-align: center;
   padding: 10px 50px;
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -361,37 +362,38 @@ button:focus-visible {
   }
 }
 
-@media screen and (min-width: 769px)  {
-  .gap{
+@media screen and (min-width: 769px) {
+  .gap {
     gap: 40px;
   }
-  .card-gap{
+  .card-gap {
     gap: 20px;
   }
-  .display-none{
+  .display-none {
     display: initial;
   }
-  .permanent-hide{
+  .permanent-hide {
     width: initial;
     overflow: visible;
   }
-  .pink-bg, .pink-bg:hover{
+  .pink-bg,
+  .pink-bg:hover {
     background-color: var(--background-pink-button);
-    padding:0 10px;
+    padding: 0 10px;
   }
-  .black-text{
+  .black-text {
     color: black;
   }
 }
 
 @media screen and (min-width: 971px) {
-  .width{
-   width: 200px;
+  .width {
+    width: 200px;
   }
 }
 
 @media screen and (min-width: 1179px) {
-  .width{
+  .width {
     width: 250px;
   }
 }

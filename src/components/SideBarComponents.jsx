@@ -7,16 +7,16 @@ class SideBarComponent extends Component {
   render() {
     return (
       <div className="side-bar-items ">
-        <a href="" className="side-bar-link">
-          <div className=" side-bar-items-content d-flex justify-content-start align-items-center">
-            {this.props.content.logo}
-            <div className="side-bar-text">
-              <div>{this.props.content.label}</div>
-              <div>{this.props.content.dropdown}</div>
+        <div className="full-height">
+          <a href="" className="side-bar-link">
+            <div className=" side-bar-items-content d-flex justify-content-start align-items-center">
+              {this.props.content.logo}
+              <div className="side-bar-text">
+                <div>{this.props.content.label}</div>
+              </div>
             </div>
-           
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     );
   }
