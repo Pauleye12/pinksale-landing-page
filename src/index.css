@@ -60,12 +60,20 @@ button:focus-visible {
 }
 
 /* manual css starts */
+/* .testing{
+  display: flex;
+  justify-content: center;
+}
+.test{
+  display: flex;
+
+} */
 .bg-color {
   background-color: var(--background-pink);
 }
 .marginTop {
   margin-top: 70px;
-  padding: 120px 20px 20px 20px;
+  padding: 120px 20px 20px 85px;
   z-index: 10;
 }
 .display-none {
@@ -76,18 +84,18 @@ button:focus-visible {
 }
 
 .height-toggle {
-  height: 0;
+  height: 0; 
   overflow: hidden;
-  background-color: var(--background-pink);
 }
 .height-toggle a {
   display: block;
   padding: 8px 16px;
- background-color: var(--background-pink);
- color: var(--text-color);
+  background-color: var(--background-pink);
+  color: var(--text-color);
 }
 .height-toggle-open {
   height: 100%;
+  background-color: var(--background-pink);
 }
 /* HEADER CSS */
 .header {
@@ -108,7 +116,6 @@ button:focus-visible {
   /* background-color: white; */
   /* border: none !important;
   outline: none !important; */
-  
 }
 /* .navbar-toggler:active{
   border: none !important;
@@ -202,7 +209,7 @@ button:focus-visible {
   margin-top: 4px;
   margin-bottom: 10px;
 }
-.full-height{
+.full-height {
   height: 40px;
 }
 
@@ -221,7 +228,8 @@ button:focus-visible {
 .side-bar-link {
   color: var(--text-color);
 }
-.side-bar-link:hover, .height-toggle a:hover {
+.side-bar-link:hover,
+.height-toggle a:hover {
   color: var(--text-pink);
   cursor: pointer;
 }
@@ -249,8 +257,9 @@ button:focus-visible {
 }
 
 .permanent {
-  width: 80px;
+  width: 65px;
   position: fixed;
+  height: 100vh;
   left: 0;
   z-index: 90;
   background-color: inherit;
@@ -298,6 +307,7 @@ button:focus-visible {
 .wrapper {
   width: 100%;
   padding: 48px 0px;
+  margin: 0;
 }
 .gap {
   gap: 20px;
@@ -361,7 +371,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .marginTop {
+    padding: 120px 20px 20px 20px;
+  }
+}
 @media screen and (min-width: 769px) {
   .gap {
     gap: 40px;
